@@ -1,28 +1,208 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.header{
-    color:rgb(0, 0, 0);
+body {
+    background-color: black;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(242,254,255,1) 20%, rgba(227,253,255,1) 52%, rgba(199,249,255,1) 76%, rgba(140,236,255,1) 100%);
+}
+
+.header {
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3em;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     flex-wrap: wrap;
+    padding: 30px 10%;
+    margin: 0 10%;
+
+
 }
-.perso{
-    color:rgb(0, 0, 0);
+
+/* classes du bloc personnalisation */
+
+.perso {
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3rem;
     font-family: 'Oswald', sans-serif;
     flex-wrap: wrap;
-    margin:100px;
+    margin: 100px 20px 20px 20px;
+}
+
+
+/* Tentative d'animation mais pas réussi à l'activer au bon moment */
+/* .slidein {
+
+    animation: normal;
+    animation-name: run;
+    animation-duration: 2s;
+    font-size: 3rem;
+}
+
+@keyframes run {
+    0% {
+        position: relative;
+        left: -75%;
+    }
+    
+    100% {
+        position: relative;
+        left: 0%;
+    }
+} */
+
+.persocontent {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-right: 40%;
+    padding-left: 2%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.persotext {
+    font-size: 2.5rem;
+    padding-left: 5%;
+}
+
+/* classes du bloc application connectées */
+
+.app {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    flex-wrap: nowrap;
+    margin: 5% 5%;
+    text-align: right;
+}
+
+.apptext {
+    font-size: 2.5rem;
+    padding: 0 5%;
+    flex-wrap: nowrap;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.textalignright {
+    text-align: center;
+    margin: 0%;
+}
+
+/* classes du bloc musique */
+
+.musictitle {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    flex-wrap: wrap;
+    margin: 150px 50px 20px 20px;
+}
+
+.musicimage {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: 'Oswald', sans-serif;
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-right: 20%;
+    padding-left: 2%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.musictext {
+    font-size: 2.5rem;
+    padding-left: 5%;
+}
+
+/* classes du bloc acheter */
+
+.buytitle {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 3.7rem;
+    font-family: 'Oswald', sans-serif;
+    flex-wrap: wrap;
+    margin: 150px 20px 20px 20px;
+    text-align: center;
+}
+
+.buytext {
+    font-size: 2.7rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: solid 3px black;
+    padding: 30px;
+    border-radius: 100px;
+    background-color: rgb(81, 184, 253);
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 10px;
+    transition: background-color 0.5s;
+}
+
+.buytext:hover {
+    background-color: rgb(173, 225, 255);
 }
 
 @media screen and (max-width: 900px) {
-    .header .perso {
-        font-size: 10px;
+    .header {
+        font-size: 1.5em;
+    }
+    .perso {
+        font-size: 1.8em;
+    }
+    .app {
+        font-size: 1.8em;
+    }
+    .textalignright {
+        width: fit-content;
+    }
+    .musictitle {
+        font-size: 1.8em;
+    }
+    .buytitle {
+        font-size: 1.8em;
+    }
+    .persotext {
+        font-size: 1.2em;
+    }
+    .apptext {
+        font-size: 1.4em;
+    }
+    .musictext {
+        font-size: 1.2em;
+    }
+    .buytext {
+        font-size: 1.2em;
     }
 }
